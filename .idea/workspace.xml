@@ -71,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -495,7 +495,8 @@
     <MESSAGE value="more typos and link" />
     <MESSAGE value="third cut of files for chatbot" />
     <MESSAGE value="git ignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="git ignore file" />
+    <MESSAGE value="train model files" />
+    <option name="LAST_COMMIT_MESSAGE" value="train model files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -855,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
