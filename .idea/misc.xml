@@ -65,6 +65,7 @@
       <textMaps />
     </LinkMapSettings>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5 (learnPython)" project-jdk-type="Python SDK" />
   <component name="PyCharmProfessionalAdvertiser">
     <option name="shown" value="true" />
   </component>
