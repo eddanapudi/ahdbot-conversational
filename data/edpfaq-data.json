@@ -1,0 +1,597 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "what is data platform",
+        "intent": "edpi_faq",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "data platform",
+            "entity": "enterprise_data_platform_interface"
+          }
+        ]
+      },
+      {
+        "text": "what services edpi offer?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "offer_edpi",
+            "start": 19,
+            "value": "offer"
+          }
+        ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "What entitlements I need to access edpi",
+        "intent": "entitlements_info",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "edpi_access",
+            "start": 28,
+            "value": "access edpi"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "how can I create a query in edpi",
+        "intent": "edpi_query",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "create_query",
+            "start": 19,
+            "value": "query"
+          }
+        ]
+      },
+      {
+        "text": "how can I get access to edpi ui",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "edpi_ui",
+            "start": 24,
+            "value": "edpi ui"
+          },
+          {
+            "end": 21,
+            "entity": "edpi_ui",
+            "start": 14,
+            "value": "access "
+          }
+        ]
+      },
+      {
+        "text": "how can I get access to edpi data",
+        "intent": "data_entitlement",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "edpi_data",
+            "start": 24,
+            "value": "edpi data"
+          },
+          {
+            "end": 21,
+            "entity": "edpi_data",
+            "start": 14,
+            "value": "access"
+          }
+        ]
+      },
+      {
+        "text": "how can I get access to edpi",
+        "intent": "entitlements_info",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "not able to login into edpi ui",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "edpi_ui",
+            "start": 22,
+            "value": " edpi ui"
+          }
+        ]
+      },
+      {
+        "text": "me@edpi not working",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 7,
+            "entity": "edpi_ui",
+            "start": 0,
+            "value": "me@edpi"
+          }
+        ]
+      },
+      {
+        "text": "self service is not working",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "edpi_ui",
+            "start": 0,
+            "value": "self service"
+          }
+        ]
+      },
+      {
+        "text": "can't see me@edpi tab",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "edpi_ui",
+            "start": 10,
+            "value": "me@edpi"
+          }
+        ]
+      },
+      {
+        "text": "can't see self service tab",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "edpi_ui",
+            "start": 10,
+            "value": "self service"
+          }
+        ]
+      },
+      {
+        "text": "login unauthorized",
+        "intent": "entitlements_info",
+        "entities": []
+      },
+      {
+        "text": "getting unauthorized error for query",
+        "intent": "entitlements_info",
+        "entities": []
+      },
+      {
+        "text": "help with janus and edpi",
+        "intent": "entitlements_info",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "edpi_access",
+            "start": 10,
+            "value": "janus "
+          }
+        ]
+      },
+      {
+        "text": "janus configuration in edpi for token validation",
+        "intent": "entitlements_info",
+        "entities": []
+      },
+      {
+        "text": "For app 89289 getting 401 unauthorized error",
+        "intent": "entitlements_info",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "http_status_code",
+            "start": 22,
+            "value": "401 "
+          }
+        ]
+      },
+      {
+        "text": "We want reference data in EDPI",
+        "intent": "data_entitlement",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "tower",
+            "start": 8,
+            "value": "reference"
+          }
+        ]
+      },
+      {
+        "text": "how can I source reference data?",
+        "intent": "data_entitlement",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "tower",
+            "start": 17,
+            "value": "reference"
+          }
+        ]
+      },
+      {
+        "text": "how can I get instrument data in edpi?",
+        "intent": "data_entitlement",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "tower",
+            "start": 14,
+            "value": "instrument"
+          },
+          {
+            "end": 29,
+            "entity": "edpi_data",
+            "start": 25,
+            "value": "data"
+          }
+        ]
+      },
+      {
+        "text": "what is data platform?",
+        "intent": "edpi_faq",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "data platform",
+            "entity": "enterprise_data_platform_interface"
+          }
+        ]
+      },
+      {
+        "text": "what services edpi offer",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "offer_edpi",
+            "start": 19,
+            "value": "offer"
+          }
+        ]
+      },
+      {
+        "text": "what edpi offers",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "offer_edpi",
+            "start": 10,
+            "value": "offers"
+          }
+        ]
+      },
+      {
+        "text": "what edpi offers?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "offer_edpi",
+            "start": 10,
+            "value": "offers"
+          }
+        ]
+      },
+      {
+        "text": "how can I consume data from edpi",
+        "intent": "edpi_consume",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "consume_edpi",
+            "start": 10,
+            "value": "consume"
+          }
+        ]
+      },
+      {
+        "text": "how can I consume data from edpi?",
+        "intent": "edpi_consume",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "consume_edpi",
+            "start": 10,
+            "value": "consume"
+          }
+        ]
+      },
+      {
+        "text": "how can I onboard to edpi",
+        "intent": "edpi_onboard",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "onboard_edpi",
+            "start": 10,
+            "value": "onboard"
+          }
+        ]
+      },
+      {
+        "text": "how can I onboard to edpi?",
+        "intent": "edpi_onboard",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "onboard_edpi",
+            "start": 10,
+            "value": "onboard"
+          }
+        ]
+      },
+      {
+        "text": "what features are available in edpi",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "end": 13,
+            "entity": "offer_edpi",
+            "start": 5,
+            "value": "features"
+          }
+        ]
+      },
+      {
+        "text": "what features are available in edpi?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "end": 13,
+            "entity": "offer_edpi",
+            "start": 5,
+            "value": "features"
+          }
+        ]
+      },
+      {
+        "text": "what is gql",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 11,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "gql"
+          }
+        ]
+      },
+      {
+        "text": "what is gql?",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 11,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "gql"
+          }
+        ]
+      },
+      {
+        "text": "what is edpi ql",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 15,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "edpi ql"
+          }
+        ]
+      },
+      {
+        "text": "what is edpi ql?",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 15,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "edpi ql"
+          }
+        ]
+      },
+      {
+        "text": "what is stored query",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "stored query"
+          }
+        ]
+      },
+      {
+        "text": "what is stored query?",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "stored query"
+          }
+        ]
+      },
+      {
+        "text": "what is graphql",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 15,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "graphql"
+          }
+        ]
+      },
+      {
+        "text": "what is graphql?",
+        "intent": "edpi_gql",
+        "entities": [
+          {
+            "end": 15,
+            "entity": "what_gql",
+            "start": 8,
+            "value": "graphql"
+          }
+        ]
+      },
+      {
+        "text": "how can I create a query in edpi?",
+        "intent": "edpi_query",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "create_query",
+            "start": 19,
+            "value": "query"
+          }
+        ]
+      },
+      {
+        "text": "how can i get access to edpi self service",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "edpi_ui",
+            "start": 29,
+            "value": "self service"
+          }
+        ]
+      },
+      {
+        "text": "how can i get access to me@edpi",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "edpi_ui",
+            "start": 24,
+            "value": "me@edpi"
+          }
+        ]
+      },
+      {
+        "text": "I'm unable to see me@EDPI",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 25,
+            "entity": "edpi_ui",
+            "start": 18,
+            "value": "me@EDPI"
+          }
+        ]
+      },
+      {
+        "text": "Unable to access self service",
+        "intent": "ui_entitlement",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "edpi_ui",
+            "start": 17,
+            "value": "self service"
+          }
+        ]
+      }
+    ]
+  }
+}

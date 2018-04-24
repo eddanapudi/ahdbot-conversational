@@ -1,0 +1,19 @@
+1) Copy edpichatbot.zip or checkout from Git (https://github.com/beearekay/ahdbot)
+2) Unzip edpichatbot.zip into your local machine
+3) Start the rasa-nlu server with trained model (in anaconda prompt):
+C:\<path>\edpichatbot or /<path>/edpichatbot
+run_server.bat or run_server.sh
+4) You may(i.e. using Ubuntu) need to retrain the data do it using following command
+python -m rasa_nlu.train -c config.json
+5) test sanity by making a POST request to
+http://localhost:5000/parse
+POST BODY
+{
+"q":"hello"
+}
+
+Start Flask Server to start bot for EDPI:
+cd  C:\<path>\edpichatbot or cd or /<path>/edpichatbot
+python app.py
+
+Access the UI using link: http://127.0.0.1:8080/

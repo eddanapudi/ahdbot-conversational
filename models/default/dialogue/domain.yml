@@ -1,0 +1,94 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_edpi_faq_system
+- utter_edpi_faq_onboard
+- utter_entitment_lob_specify
+- utter_edpi_faq_entitlements
+- utter_goodbye
+- utter_unknown
+actions:
+- utter_greet
+- utter_edpi_faq_system
+- utter_edpi_faq_onboard
+- utter_entitment_lob_specify
+- utter_edpi_faq_entitlements
+- utter_goodbye
+- utter_unknown
+config:
+  store_entities_as_slots: true
+entities:
+- component
+- entity
+- http_status_code
+- lob
+- source
+- tower
+intents:
+- greet
+- goodbye
+- affirm
+- edpi_faq_system
+- edpi_faq_onboard
+- edpi_faq_entitlements
+- edpi_offer
+- unknown
+slots:
+  component:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  entity:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  http_status_code:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  lob:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - am
+    - wm
+    - others
+  source:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  tower:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_edpi_faq_entitlements:
+  - text: 'If you are from AM, visit ''go/edpi'' and go to help section for finding
+      entitlement requirements
+
+      If you are from WM, visit ''go/edpiwm'' and go to help section for finding entitlement
+      requirements'
+  utter_edpi_faq_onboard:
+  - text: 'These are 4 steps to onboard to EDPI
+
+      1.Onboard Application
+
+      2.Get EDPI Data Tower level Entitlements
+
+      3.Build queries using EDPI Self-service
+
+      4.Integrate with EDPI and consume data'
+  utter_edpi_faq_system:
+  - text: EDPI is a data distribution platform to provide a single, consistent, highly
+      available interface to distribute Asset and Wealth Management (AWM) Core Data
+      from authoritative sources, aligned with firmwide data strategy
+  utter_entitment_lob_specify:
+  - text: You want to consume data from '{lob}' EDPI. Is this correct?
+  utter_goodbye:
+  - text: goodbye :(
+  - text: bye bye
+  utter_greet:
+  - text: 'hey there! Welcome to EDPI Adoption Agent!
+
+      I can help you quickly resolve your queries related to EDPI.
+
+      Put your queries here'
+  utter_unknown:
+  - text: I am not trained for this query. Please raise a Service Desk Ticket from
+      'go/edpihelp'
+topics: []

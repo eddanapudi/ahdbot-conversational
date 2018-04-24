@@ -1,0 +1,781 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey bot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Yes",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Yes",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "yep",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "yeah",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "right",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "ok",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "Thanks for the info. bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "This is useful. goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "It's ok. You can stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "please stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "How can I get access to edpi AM ui?",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 32,
+            "end": 34,
+            "value": "ui",
+            "entity": "component"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "value": "AM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "How can I get access to edpi WM data?",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "data",
+            "entity": "component"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "value": "WM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "How can I get access to edpi?",
+        "intent": "edpi_faq_entitlements",
+        "entities": []
+      },
+      {
+        "text": "not able to login into edpi ui",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 28,
+            "end": 30,
+            "value": "ui",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "me@edpi not working",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "me@edpi",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "self service is not working",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "self service",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "can't see me@edpi tab in AM EDPI",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "component",
+            "start": 10,
+            "value": "me@edpi"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "value": "AM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "can't see self service tab in AM EDPI",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "component",
+            "start": 10,
+            "value": "self service"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "value": "AM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "login unauthorized",
+        "intent": "edpi_faq_entitlements",
+        "entities": []
+      },
+      {
+        "text": "getting unauthorized error for query",
+        "intent": "edpi_faq_entitlements",
+        "entities": []
+      },
+      {
+        "text": "help with janus and edpi",
+        "intent": "edpi_faq_entitlements",
+        "entities": []
+      },
+      {
+        "text": "janus configuration in edpi for token validation",
+        "intent": "edpi_faq_entitlements",
+        "entities": []
+      },
+      {
+        "text": "For app 89289 getting 401 unauthorized error in AM",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "401",
+            "entity": "http_status_code"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "value": "AM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "We are getting 401 unauthorized error for a query. Please help",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "401",
+            "entity": "http_status_code"
+          }
+        ]
+      },
+      {
+        "text": "We want reference data in WM EDPI",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "tower",
+            "start": 8,
+            "value": "reference"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "value": "data",
+            "entity": "component"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "WM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "how can I source reference data?",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "tower",
+            "start": 17,
+            "value": "reference"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "how can I get instrument data in edpi?",
+        "intent": "edpi_faq_entitlements",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "tower",
+            "start": 14,
+            "value": "instrument"
+          },
+          {
+            "end": 29,
+            "entity": "component",
+            "start": 25,
+            "value": "data"
+          }
+        ]
+      },
+      {
+        "text": "what services edpi offer",
+        "intent": "edpi_offer",
+        "entities": []
+      },
+      {
+        "text": "what edpi offers",
+        "intent": "edpi_offer",
+        "entities": []
+      },
+      {
+        "text": "what edpi offers?",
+        "intent": "edpi_offer",
+        "entities": []
+      },
+      {
+        "text": "what features are available in edpi",
+        "intent": "edpi_offer",
+        "entities": []
+      },
+      {
+        "text": "What are various data towers available in AM EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 42,
+            "end": 44,
+            "value": "AM",
+            "entity": "lob"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "Can I get OMNI Instrument data in EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "OMNI",
+            "entity": "source"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "value": "Instrument",
+            "entity": "entity"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "Can I get reservoir data from EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "reservoir",
+            "entity": "source"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "What are various data towers available in WM EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "data",
+            "entity": "component"
+          },
+          {
+            "start": 42,
+            "end": 44,
+            "value": "WM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "Can I get Olympic Instrument data in WM EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Olympic",
+            "entity": "source"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "value": "Instrument",
+            "entity": "entity"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "Can I get Fusion Data in EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Fusion",
+            "entity": "source"
+          }
+        ]
+      },
+      {
+        "text": "Can i get Fund Share class data in EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 26,
+            "value": "Fund Share class",
+            "entity": "entity"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "Can I get Product Hierarchy data in AM EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 27,
+            "value": "Product Hierarchy",
+            "entity": "entity"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "value": "AM",
+            "entity": "lob"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "data",
+            "entity": "component"
+          }
+        ]
+      },
+      {
+        "text": "Can I get Instrument Classification from WM Reservoir in EDPI?",
+        "intent": "edpi_offer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 35,
+            "value": "Instrument Classification",
+            "entity": "entity"
+          },
+          {
+            "start": 44,
+            "end": 53,
+            "value": "Reservoir",
+            "entity": "source"
+          },
+          {
+            "start": 41,
+            "end": 43,
+            "value": "WM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "What services edpi offer?",
+        "intent": "edpi_offer",
+        "entities": []
+      },
+      {
+        "text": "What is EDPI?",
+        "intent": "edpi_faq_system",
+        "entities": []
+      },
+      {
+        "text": "What is Enterprise Data Platform Interface (EDPI)?",
+        "intent": "edpi_faq_system",
+        "entities": []
+      },
+      {
+        "text": "What is Enterprise Data Platform Interface?",
+        "intent": "edpi_faq_system",
+        "entities": []
+      },
+      {
+        "text": "What is data platform?",
+        "intent": "edpi_faq_system",
+        "entities": []
+      },
+      {
+        "text": "Explain me what is EDPI?",
+        "intent": "edpi_faq_system",
+        "entities": []
+      },
+      {
+        "text": "Tell me about EDPI",
+        "intent": "edpi_faq_system",
+        "entities": []
+      },
+      {
+        "text": "how can I consume data from edpi",
+        "intent": "edpi_faq_onboard",
+        "entities": []
+      },
+      {
+        "text": "how can I onboard to edpi",
+        "intent": "edpi_faq_onboard",
+        "entities": []
+      },
+      {
+        "text": "What are various steps involved in onboarding to AM EDPI?",
+        "intent": "edpi_faq_onboard",
+        "entities": [
+          {
+            "start": 49,
+            "end": 51,
+            "value": "AM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "What are various steps involved in onboarding to WM EDPI?",
+        "intent": "edpi_faq_onboard",
+        "entities": [
+          {
+            "start": 49,
+            "end": 51,
+            "value": "WM",
+            "entity": "lob"
+          }
+        ]
+      },
+      {
+        "text": "Our application needs EDPI data. How can we get?",
+        "intent": "edpi_faq_onboard",
+        "entities": []
+      },
+      {
+        "text": "We want to consume Morningstar data. How can we consume this data from EDPI?",
+        "intent": "edpi_faq_onboard",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "Morningstar",
+            "entity": "source"
+          }
+        ]
+      },
+      {
+        "text": "I want AM Data",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "AM",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "I want WM Data",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "WM",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "AM",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "AM",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "WM",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "WM",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "I want AM",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "AM",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "I want WM",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "WM",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "no",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "no",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "Nope",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Nope",
+            "entity": "confirm"
+          }
+        ]
+      },
+      {
+        "text": "Performance of my queries are very bad",
+        "intent": "unknown",
+        "entities": []
+      },
+      {
+        "text": "dasa hfhdfs asasasaffjhhdf s dadasas",
+        "intent": "unknown",
+        "entities": []
+      },
+      {
+        "text": "How can do you better in terms of performance",
+        "intent": "unknown",
+        "entities": []
+      },
+      {
+        "text": "My query is taking too long",
+        "intent": "unknown",
+        "entities": []
+      },
+      {
+        "text": "fghhdfsdasd fgdfsd yytyrter 7756453424697 23112@@#!@!",
+        "intent": "unknown",
+        "entities": []
+      },
+      {
+        "text": "What is time now?",
+        "intent": "unknown",
+        "entities": []
+      },
+      {
+        "text": "world is changing too fast. Isn't it?",
+        "intent": "unknown",
+        "entities": []
+      }
+    ]
+  }
+}

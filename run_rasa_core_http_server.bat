@@ -1,0 +1,2 @@
+@REM python -m rasa_core.server -d models/default/dialogue -u models/default/current > out.log
+python -m rasa_core.run -d models/default/dialogue -u models/default/current --port 5002 --connector EdpAhdWebBot

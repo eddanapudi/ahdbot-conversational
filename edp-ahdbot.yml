@@ -1,0 +1,61 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - edpi_faq_system
+  - edpi_faq_onboard
+  - edpi_faq_entitlements
+  - edpi_offer
+  - unknown
+
+entities:
+  - component
+  - entity
+  - http_status_code
+  - lob
+  - source
+  - tower
+
+slots:
+  source:
+    type: text
+  lob:
+    type: categorical
+    values:
+    - AM
+    - WM
+    - Others
+  entity:
+    type: text
+  tower:
+    type: text
+  component:
+    type: text
+  http_status_code:
+    type: text
+
+templates:
+  utter_greet:
+    - "hey there! Welcome to EDPI Adoption Agent!\nI can help you quickly resolve your queries related to EDPI.\nPut your queries here"
+  utter_edpi_faq_system:
+    - "EDPI is a data distribution platform to provide a single, consistent, highly available interface to distribute Asset and Wealth Management (AWM) Core Data from authoritative sources, aligned with firmwide data strategy"
+  utter_edpi_faq_onboard:
+    - "These are 4 steps to onboard to EDPI\n1.Onboard Application\n2.Get EDPI Data Tower level Entitlements\n3.Build queries using EDPI Self-service\n4.Integrate with EDPI and consume data"
+  utter_entitment_lob_specify:
+    - "You want to consume data from '{lob}' EDPI. Is this correct?"
+  utter_edpi_faq_entitlements:
+    - "If you are from AM, visit 'go/edpi' and go to help section for finding entitlement requirements\nIf you are from WM, visit 'go/edpiwm' and go to help section for finding entitlement requirements"
+  utter_goodbye:
+    - "goodbye :("
+    - "bye bye"              # multiple templates will allow the bot to randomly pick from them
+  utter_unknown:
+    - "I am not trained for this query. Please raise a Service Desk Ticket from 'go/edpihelp'"
+
+actions:
+  - utter_greet
+  - utter_edpi_faq_system
+  - utter_edpi_faq_onboard
+  - utter_entitment_lob_specify
+  - utter_edpi_faq_entitlements
+  - utter_goodbye
+  - utter_unknown

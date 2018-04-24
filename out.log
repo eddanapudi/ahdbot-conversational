@@ -1,0 +1,14 @@
+2018-04-22 19:44:31+0530 [-] Log opened.
+2018-04-22 19:44:31+0530 [-] Site starting on 5005
+2018-04-22 19:44:31+0530 [-] Starting factory <twisted.web.server.Site object at 0x000001C91170F5F8>
+2018-04-22 19:44:39+0530 [-] C:\Users\kalyan\Anaconda2\envs\py36\lib\site-packages\sklearn\preprocessing\label.py:151: builtins.DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+2018-04-22 19:44:40+0530 [-] "127.0.0.1" - - [22/Apr/2018:14:14:38 +0000] "POST /conversations/default/parse HTTP/1.1" 200 960 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+2018-04-22 19:45:40+0530 [-] Timing out client: IPv4Address(TCP, '127.0.0.1', 63081)
+2018-04-22 19:45:53+0530 [-] "127.0.0.1" - - [22/Apr/2018:14:15:52 +0000] "POST /conversations/default/webhook HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+2018-04-22 19:46:07+0530 [-] "127.0.0.1" - - [22/Apr/2018:14:16:06 +0000] "POST /webhook HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+2018-04-22 19:46:29+0530 [-] "127.0.0.1" - - [22/Apr/2018:14:16:29 +0000] "GET /webhook HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+2018-04-22 19:47:29+0530 [-] Timing out client: IPv4Address(TCP, '127.0.0.1', 63085)
+2018-04-22 20:00:58+0530 [-] Received SIGINT, shutting down.
+2018-04-22 20:00:58+0530 [twisted.web.server.Site] (TCP Port 5005 Closed)
+2018-04-22 20:00:58+0530 [-] Stopping factory <twisted.web.server.Site object at 0x000001C91170F5F8>
+2018-04-22 20:00:58+0530 [-] Main loop terminated.

@@ -1,0 +1,266 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "entities": [],
+        "intent": "edpi_faq",
+        "text": "what is edpi"
+      },
+      {
+        "entities": [],
+        "intent": "edpi_faq",
+        "text": "how can I on board into edpi?"
+      },
+      {
+        "entities": [],
+        "intent": "edpi_faq",
+        "text": "what services edpi offer?"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "yep"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "yeah"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "What entitlements I need to access edpi"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "good bye"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "stop"
+      },
+      {
+        "entities": [],
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "how can I create a query in edpi"
+      },
+      {
+        "entities": [
+          {
+            "end": 31,
+            "entity": "component",
+            "start": 29,
+            "value": "ui"
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "how can I get access to edpi ui"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "how can I get access to edpi data"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "how can I get access to edpi"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "indeed"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "that's right"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "ok"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "great"
+      },
+      {
+        "entities": [
+          {
+            "end": 30,
+            "entity": "edpi_ui",
+            "start": 22,
+            "value": " edpi ui"
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "not able to login into edpi ui"
+      },
+      {
+        "entities": [
+          {
+            "end": 7,
+            "entity": "edpi_ui",
+            "start": 0,
+            "value": "me@edpi"
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "me@edpi not working"
+      },
+      {
+        "entities": [
+          {
+            "end": 12,
+            "entity": "edpi_ui",
+            "start": 0,
+            "value": "self service"
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "self service is not working"
+      },
+      {
+        "entities": [
+          {
+            "end": 17,
+            "entity": "edpi_ui",
+            "start": 10,
+            "value": "me@edpi"
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "can't see me@edpi tab"
+      },
+      {
+        "entities": [
+          {
+            "end": 22,
+            "entity": "edpi_ui",
+            "start": 10,
+            "value": "self service"
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "can't see self service tab"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "login unauthorized"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "getting unauthorized error for query"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "help with janus and edpi"
+      },
+      {
+        "entities": [],
+        "intent": "entitlements_info",
+        "text": "janus configuration in edpi for token validation"
+      },
+      {
+        "entities": [
+          {
+            "end": 26,
+            "entity": "http_status_code",
+            "start": 22,
+            "value": "401 "
+          }
+        ],
+        "intent": "entitlements_info",
+        "text": "For app 89289 getting 401 unauthorized error"
+      },
+      {
+        "entities": [
+          {
+            "end": 17,
+            "entity": "tower",
+            "start": 8,
+            "value": "reference"
+          }
+        ],
+        "intent": "edpi_faq",
+        "text": "We want reference data in EDPI"
+      },
+      {
+        "entities": [
+          {
+            "end": 26,
+            "entity": "tower",
+            "start": 17,
+            "value": "reference"
+          }
+        ],
+        "intent": "edpi_faq",
+        "text": "how can I source reference data?"
+      },
+      {
+        "entities": [
+          {
+            "end": 24,
+            "entity": "tower",
+            "start": 14,
+            "value": "instrument"
+          }
+        ],
+        "intent": "edpi_faq",
+        "text": "how can I get instrument data in edpi?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+what entitlements i need to access EDPI
+Help with Janus and EDPI
+
+Intent: Entitlement_info
+Entity: edpi_access,access
+
+EDPI uses janus entitlements to authorize user, Which one you look for ?
+
+Self Service Or Data
+
+Self Service -> For Individual Users accessing Self Service or EDPI UI, please raise EDPI Consumer entitlement
+DATA -> Raise the Janus data entitlement specific to data tower, Reference/Instrument/Funds etc.
+
+
+============================
+how can i get access to EDPI UI self service me@EDPI
+I'm unable to see me@EDPI, 
+me@EDPI not working
+Unable to access self service
+
+Intent: UI_Entitlement
+Entity: edpi_UI, me@EDPI
+
+Which LOB
+AM or WM
+AM -> Please raise EDPI COnsumer entitlement for AM in RMT Prod. Visit RMT
+AM -> Please raise EDPI COnsumer entitlement for WM in RMT Prod. Visit RMT
+==========================
+
+how can i get access to EDPI Data
+Intent: data_entitlement
+Entity: edpi_data, data
+
+Which LOB
+AM or WM
+
+AM -> You need have a EDPI parent Query Entitlement and also We have data sourced from below towers. Click on the tower below
+	Reference/ Securities & Pricing / Funds 
+		Visit RMT to raise the below entitlements. Parent Entitelemnt, tower specific. Instructions here
+WM -> You need have a EDPI parent Query Entitlement and also We have data sourced from below towers. Click on the tower below
+	Reference/ Transaction & Holdings / Morningstar 
+
+		Visit RMT to raise the below entitlements. Parent Entitelemnt, tower specific. Instructions here
+=================================
+

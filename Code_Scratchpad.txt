@@ -1,0 +1,41 @@
+"edpi_intro": "EDPI is an Enterprise Data Platform Interface. Once onboarded consumers can access AM/WM Data from predefined Data towers <br/><br/><button type=\"button\" class=\"btn btn-info\">AM</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type=\"button\" class=\"btn btn-info\">WM</button>",
+
+
+<input type="submit" name="submit" value="AM">
+<input type="submit" name="submit" value="Do Something Else">
+
+"edpi_intro": "EDPI is an Enterprise Data Platform Interface. Once onboarded consumers can access AM/WM Data from predefined Data towers. Choose one from below <br/><br/><input type=\"submit\" name=\"submit\" class=\"btn btn-info btn-lg\" value=\"AM\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"submit\" class=\"btn btn-info btn-lg\" value="WM">",
+
+"edpi_intro": "EDPI is an Enterprise Data Platform Interface. Once onboarded consumers can access AM/WM Data from predefined Data towers <br/><br/><div class=\"send_message\"><div class=\"text\">AM</div></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class=\"send_message\"><div class=\"text\">WM</div></div>",
+
+"edpi_intro": "EDPI is an Enterprise Data Platform Interface. Once onboarded consumers can access AM/WM Data from predefined Data towers. Choose one from below <br/><br/><html><body><form action=\"http://localhost:5000\" method=\"POST\"><input type=\"submit\" name=\"submit\" class=\"btn btn-info btn-lg\" value=\"AM EDPI\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"submit\" class=\"btn btn-info btn-lg\" value=\"WM EDPI\"> </form></body></html>",
+
+"edpi_intro": "EDPI is an Enterprise Data Platform Interface. Once onboarded consumers can access AM/WM Data from predefined Data towers. Choose one from below <br/><br/><html><body><form action=\"http://localhost:5000\" method=\"POST\"><input type=\"submit\" name=\"submit\" class=\"btn btn-info btn-lg\" value=\"AM EDPI\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"submit\" class=\"btn btn-info btn-lg\" value=\"WM EDPI\"> </form></body></html>",
+
+
+onClick="window.location='https://www.facebook.com';"
+
+
+ <div class="send_message"><div class="text">AM</div></div>
+ <div class="send_message"><div class="text">WM</div></div>
+
+
+<div class=\"btn btn-default btn-lg\">AM</div>
+
+"edpi_intro": "EDPI is an Enterprise Data Platform Interface. Once onboarded consumers can access AM/WM Data from predefined Data towers <br/><br/><div class=\"btn btn-default btn-lg\">AM</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class=\"btn btn-default btn-lg\">WM</div>",
+
+
+if request.form["text"] == 'AM':
+             return jsonify({"status":"success","response":"You choose AM..."})
+        elif request.form["text"] == 'WM':
+            return jsonify({"status":"success","response":"You choose WM..."})
+        else:
+
+action=\"http://127.0.0.1:8080/result\"
+
+"intro": ["This is a EDPI FAQ bot. One stop-shop to all your EDPI related queries"],
+    "greet":["Hey","Hello","Hi"],
+    "goodbye":["Bye","It was nice talking to you","See you","ttyl"],
+    "affirm":["Cool","I know you would like it"]
+
+//"pipeline": "spacy_sklearn",
