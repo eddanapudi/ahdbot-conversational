@@ -45,13 +45,8 @@ edpifaq_response_dict = {
     "reference": "Which LOB?Options:AM#WM",
     "AM_reference": "Which Version do you want to see?Options:v0#v1#v2",
     "WM_reference": "Which Version do you want to see?Options:v3#v4#v5",
-    "v0_AM_reference": "Please find the Link:www.google.com",
+    "v0_AM_reference": "Please find the Link:www.google.com"
 }
-
-
-
-
-
 
 def button_generator(buttons,append_text):
     button_template = []
@@ -59,7 +54,6 @@ def button_generator(buttons,append_text):
         entry = Entry(ResponseType.BUTTON,b+"_"+append_text,b)
         button_template.append(entry)
     return button_template
-
 
 def link_generator(links):
     link_template=[]
@@ -71,8 +65,6 @@ def link_generator(links):
             entry = Entry(ResponseType.LINK,link_link_text[0],link_link_text[0])
         link_template.append(entry)
     return link_template
-
-
 
 def define_html_template(response_text,append_text):
     entry = []
@@ -92,8 +84,6 @@ def define_html_template(response_text,append_text):
         entry= link_generator(links)
     else:
         text = response_text
-        
-    
 
     h_t=Response()
     print (str(h_t))
@@ -101,8 +91,6 @@ def define_html_template(response_text,append_text):
     h_t.submitAction = "javascript:sendToServer(value)"
     h_t.entries = entry
     return h_t
-
-
 
 get_random_response = lambda intent:random.choice(intent_response_dict[intent])
 
@@ -136,15 +124,13 @@ def getBotResponse(intent,entities):
 
     return response_text
 
-
 def edpi_faq(entities):
     print("----------")
     print(entities)
     if len(entities) == 0:
-        return edpifaq_response_dict["edpi_intro"]
+        return intent_response_dict["edpi_intro"]
     if len(entities) == 1:
         print(" ************** ")
         ent = entities[0]
         return edpifaq_response_dict[ent["entity"]]
     return "Sorry.." + edpifaq_response_dict["faq_link"]
-

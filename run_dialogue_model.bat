@@ -1,1 +1,1 @@
-python -m rasa_core.train -s edp-ahdbot-stories.md -d edp-ahdbot.yml -o models/dialogue --epochs 300
+python -m rasa_core.train -s edp-ahdbot-stories.md -d edp-ahdbot.yml -o models/dialogue --epochs 500

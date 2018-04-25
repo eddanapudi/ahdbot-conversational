@@ -18,12 +18,13 @@ def chat():
     try:
         user_message = request.form["text"]
         print(user_message)
-        data1 = {'sender': 'default', 'message': user_message}
-        response = requests.post(url='http://localhost:5004/chat/webhook', data={'sender': 'default', 'message': user_message})
-        #print(response.json())
-        #response = response.json()
+        json_data = {"sender": "default", "message": user_message}
+        print(json.dumps(json_data))
+        response = requests.post(url="http://localhost:5004/chat/webhook", data=json.dumps(json_data))
         print(response.text)
-        return jsonify({"status": "success", "response": "This is testing"})
+        s = response.text
+        t = s[s.find("[") + 1:s.find("]")]
+        return jsonify({"status": "success", "response": t})
     except Exception as e:
         print(e)
         return jsonify({"status": "success", "response": "Sorry I am not trained to do that yet..."})
