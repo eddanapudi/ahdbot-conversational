@@ -7,7 +7,7 @@ from engine import *
 import json
 
 app = Flask(__name__)
-app.secret_key = '12345'
+app.secret_key = '12346'
 
 @app.route('/')
 def hello_world():
