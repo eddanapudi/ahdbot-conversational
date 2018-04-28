@@ -29,7 +29,11 @@
     "prev_utter_edpi_faq_onboard",
     "prev_utter_entitment_lob_specify",
     "prev_utter_edpi_faq_entitlements",
+    "prev_utter_edpi_faq_entitlements_am",
+    "prev_utter_edpi_faq_entitlements_wm",
     "prev_utter_goodbye",
-    "prev_utter_unknown"
+    "prev_utter_unknown",
+    "prev_action_greet",
+    "prev_action_goodbye"
   ]
 }

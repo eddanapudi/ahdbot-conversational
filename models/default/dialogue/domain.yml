@@ -5,16 +5,24 @@ action_names:
 - utter_edpi_faq_onboard
 - utter_entitment_lob_specify
 - utter_edpi_faq_entitlements
+- utter_edpi_faq_entitlements_am
+- utter_edpi_faq_entitlements_wm
 - utter_goodbye
 - utter_unknown
+- action_greet
+- action_goodbye
 actions:
 - utter_greet
 - utter_edpi_faq_system
 - utter_edpi_faq_onboard
 - utter_entitment_lob_specify
 - utter_edpi_faq_entitlements
+- utter_edpi_faq_entitlements_am
+- utter_edpi_faq_entitlements_wm
 - utter_goodbye
 - utter_unknown
+- actions.ActionGreet
+- actions.ActionGoodbye
 config:
   store_entities_as_slots: true
 entities:
@@ -63,6 +71,12 @@ templates:
 
       If you are from WM, visit ''go/edpiwm'' and go to help section for finding entitlement
       requirements'
+  utter_edpi_faq_entitlements_am:
+  - text: Visit 'go/edpi' and go to help section for finding entitlement requirements
+      for AM EDPI
+  utter_edpi_faq_entitlements_wm:
+  - text: Visit 'go/edpiwm' and go to help section for finding entitlement requirements
+      for WM EDPI
   utter_edpi_faq_onboard:
   - text: 'These are 4 steps to onboard to EDPI
 
@@ -83,11 +97,8 @@ templates:
   - text: goodbye :(
   - text: bye bye
   utter_greet:
-  - text: 'hey there! Welcome to EDPI Adoption Agent!
-
-      I can help you quickly resolve your queries related to EDPI.
-
-      Put your queries here'
+  - text: hey there! Welcome to EDPI Adoption Agent!<br>I can help you quickly resolve
+      your queries related to EDPI.<br>Put your queries here
   utter_unknown:
   - text: I am not trained for this query. Please raise a Service Desk Ticket from
       'go/edpihelp'

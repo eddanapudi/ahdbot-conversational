@@ -1,4 +1,5 @@
 import requests
+import re
 from decimal import Decimal
 from flask import Flask
 from flask import render_template, jsonify, request
@@ -22,9 +23,13 @@ def chat():
         print(json.dumps(json_data))
         response = requests.post(url="http://localhost:5004/chat/webhook", data=json.dumps(json_data))
         print(response.text)
-        s = response.text
-        t = s[s.find("[") + 1:s.find("]")]
-        return jsonify({"status": "success", "response": t})
+        text1 = response.text
+        text2 = text1[text1.find("[") + 1:text1.find("]")]
+        text3 = text2.replace('"', '')
+        #text3 = ''.join(c for c in text2 if c not in '"')
+        #text3 = re.sub('"', '', text2)
+        #text3 = text2.strip('\"')
+        return jsonify({"status": "success", "response": text3})
     except Exception as e:
         print(e)
         return jsonify({"status": "success", "response": "Sorry I am not trained to do that yet..."})
